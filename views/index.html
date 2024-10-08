@@ -11,9 +11,18 @@
     <h1>Textify</h1>
     <div id="container">
         <h2>Insert your email and password to fetch data.</h2>
-        <form method="GET" action="" id="getUserMail" class="mailForm">
-            <label for="email" id="userMail">E-mail: </label><input id="email" type="email" autocomplete="email"/>
-            <label for="password">Password: </label><input id="password" type="password">
+        <form method="POST" action="/sendInfo" class="mailForm">
+
+            <div class="formGroup">
+                <label for="email" id="userMail">E-mail: </label>
+                <input id="email" type="email" autocomplete="email" name="email" required/>
+            </div>
+
+            <div class="formGroup">
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="password" required>
+            </div>
+            
             <button type="submit">Submit</button>
         </form>
     </div>

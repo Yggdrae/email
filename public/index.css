@@ -54,6 +54,23 @@ button {
     color: #efefef;
 }
 
+.formGroup {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.formGroup label {
+    margin: 5px;
+}
+
+.formOption {
+    border-radius: 10px;
+    padding: 5px;
+}
+
 button:hover {
     opacity: .7;
 }
